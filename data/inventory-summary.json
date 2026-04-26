@@ -1,0 +1,21 @@
+{
+  "source": "Nissan DBS WDN0962-R1 Daily Inventory Report",
+  "reportDate": "2026-04-24",
+  "dealer": "O'Neil Nissan Inc.",
+  "vehicleGrandTotal": 192,
+  "carGrandTotal": 70,
+  "truckGrandTotal": 122,
+  "models": [
+    { "model": "Rogue", "count": 65, "strategy": "Primary traffic driver", "urgency": "High supply - convert with availability and payment CTAs" },
+    { "model": "Sentra", "count": 53, "strategy": "Value / payment-first campaign", "urgency": "High supply - push payment options and today pricing" },
+    { "model": "Altima", "count": 14, "strategy": "Sedan alternative / AWD sedan", "urgency": "Moderate supply" },
+    { "model": "Murano", "count": 12, "strategy": "Aged inventory focus", "urgency": "Several aged units - manager special messaging" },
+    { "model": "Pathfinder", "count": 9, "strategy": "Family 3-row SUV", "urgency": "Limited supply" },
+    { "model": "Frontier", "count": 12, "strategy": "Truck campaign", "urgency": "Aged truck opportunities" },
+    { "model": "New Kicks", "count": 20, "strategy": "Entry crossover", "urgency": "Mixed age units" },
+    { "model": "Armada", "count": 2, "strategy": "Premium SUV", "urgency": "Low supply" },
+    { "model": "Leaf", "count": 1, "strategy": "EV niche", "urgency": "Single unit" },
+    { "model": "Rogue PHEV", "count": 2, "strategy": "Electrified SUV", "urgency": "Low supply" },
+    { "model": "Versa Sedan", "count": 2, "strategy": "Aged value inventory", "urgency": "One very aged unit" }
+  ]
+}
