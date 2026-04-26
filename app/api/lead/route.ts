@@ -22,16 +22,26 @@ export async function POST(req: Request) {
       }),
     });
 
-    const json = await response.json().catch(() => ({}));
+    const text = await response.text();
+
+    let json;
+    try {
+      json = JSON.parse(text);
+    } catch {
+      json = { raw: text };
+    }
 
     if (!response.ok) {
-      throw new Error(json?.error || "Failed to notify ARPAIBOT");
+      return NextResponse.json(
+        { success: false, error: "Webhook forward failed", details: json },
+        { status: 502 }
+      );
     }
 
     return NextResponse.json({
       success: true,
       message: "Lead sent to ARPAIBOT",
-      result: json,
+      details: json,
     });
   } catch (error) {
     return NextResponse.json(
